@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludlum BookStore Homepage</title>
+    <link rel="stylesheet" href="css/style.css" class="style">
+    <script src="https://kit.fontawesome.com/d6a3165d4e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="overlay">
+        <!--overlay  -->
+
+        <nav class="overlay-content">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="showBasket">&#9776;<i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    <ul class="hidden listBasket">
+                        <li class="basket" style="font-size:3rem"><i class="fa fa-smile-o" style="font-size:3rem" aria-hidden="true"></i> Go to Products Page to Buy Your Books!</li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav>
+        <!-- close button nav -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    </header>
+    <span class="burger" onclick="openNav()">&#9776;</span>
+
+
+    <main>
+        <h1>About Robert Ludlum Online Bookstore!</h1>
+        <div class="container">
+
+            <div class="first" style="background-image: url(./images/bookstore.jpg)">
+            </div>
+
+            <div class="second" style="background-image: url(./images/bookstore.jpg)">
+            </div>
+
+            <div class="centerPage">
+                <img src="images/ourbookstore.jpg" alt="">
+                <p>Think about the last good book you read. Did it make you feel more connected to others? Maybe it
+                    served as a welcome escape. Maybe it helped you rediscover the beauty in life. Did it surprise you?
+                </p>
+
+                <p> As an bookstore dedicated to an extra-ordinary nover writer, we strive to offer the richness of
+                    experience as the books he wrote. And because the only people we’re beholden to are our customers
+                    and ourselves,
+                    we can focus on what really matters — promoting diverse perspectives, upholding the free exchange of
+                    ideas, championing the enduring power of books, and bolstering the great community of readers we’re
+                    lucky to be a part of.
+                </p>
+
+                <p>Thank you for supporting these lofty goals. Your choice sustains a really romantic business
+                    bookstore, and allows us to follow our passion for getting the right books into the right hands, 365
+                    days a year.
+                </p>
+
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>Welcome to Robert Ludlum BookStore!</p>
+    </footer>
+
+</body>
+<script src="js/app.js"></script>
+</html>

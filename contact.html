@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludlum BookStore Homepage</title>
+    <link rel="stylesheet" href="css/style.css" class="style">
+    <script src="https://kit.fontawesome.com/d6a3165d4e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <header class="overlay">
+        <!--overlay  -->
+
+        <nav class="overlay-content">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="showBasket">&#9776;<i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    <ul class="hidden listBasket">
+                        <li class="basket" style="font-size:3rem"><i class="fa fa-smile-o" style="font-size:3rem" aria-hidden="true"></i> Go to Products Page to Buy Your Books!</li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav>
+        <!-- close button nav -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    </header>
+    <span class="burger" onclick="openNav()">&#9776;</span>
+
+
+    <main>
+
+        <h1>Contact Us</h1>
+
+        <div class="container">
+
+            <div class="first" style="background-image: url(./images/bookstore.jpg)">
+            </div>
+
+            <div class="second" style="background-image: url(./images/bookstore.jpg)">
+            </div>
+
+            <div class="centerPage">
+
+                <form>
+
+                    <fieldset>
+                        <legend>Personal Information</legend>
+
+                        <input type="text" class="fname" name="fname" required minlength=3
+                            placeholder="Enter Your First Name" />
+
+                        <input type="text" class="lname" name="lname" required minlength=3
+                            placeholder="Enter Your Last Name" />
+
+                        <input type="email" class="email" name="email" required placeholder="Enter A Valid Email" />
+
+                        <input type="date" class="date" name='date' />
+
+                    </fieldset>
+
+
+
+                    <fieldset>
+                        <legend>Your comments:<i class="fa fa-commenting-o" aria-hidden="true"></i></legend>
+
+                        Do you want to ask us about a book...
+
+                        <label for="bought">
+                            <input type="radio" name="comment_kind" value="bought"> I have already bought</label>
+
+                        <label for="order">
+                            <input type="radio" name="comment_kind" value="order"> I want to buy</label>
+
+                        <label for="other">
+                            <input type="radio" name="comment_kind" value="other"> No, I want to make a comment about
+                            something else</label>
+
+
+                        <textarea name="comment" rows="6"
+                            maxlength="300">Tell us your comment in 300 characters...</textarea>
+
+                        </select>
+                    </fieldset>
+
+                    <button class="contact_submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Welcome to Robert Ludlum BookStore!</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
